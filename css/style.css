@@ -1,0 +1,90 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+
+
+/* Fuente y color Body*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7b212;
+}
+
+/* Color e imagen Header */
+header {
+    background-color: #d3d3d3;
+    background-image: url(../img/optica-banner-footer.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header a {
+    text-decoration: none;
+    color: #0a0a0a;
+}
+
+header a:visited {
+    color: #d3d3d3;
+}
+
+
+header ul {
+    list-style-type: none;
+}
+
+header img {
+    width: 11%;
+    height: 7%;
+    border-left: #808080 solid;
+    border-top: #808080 solid;
+    border-right: #f59622 solid;
+    border-bottom: #f59622 solid;
+}
+
+/* Footer */
+footer {
+    background-image: url(../img/optica-banner-footer.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+footer a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #a52019;
+}
+
+/* Main */
+main img {
+    width: 100%;
+}
+
+.main-general {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Section */
+section h5 {
+    text-decoration: overline;
+}
+
+.section-general {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-contacts {
+    font-size: 20px;
+    text-align: center;
+}
+
+.section-chm {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
