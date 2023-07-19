@@ -60,9 +60,9 @@ img {
 #footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: space-around;
   border-top: 2px solid #000000;
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 #footer p {
   font-size: 2rem;
@@ -76,36 +76,34 @@ img {
   width: 350px;
   height: 300px;
 }
-#footer .box_footer {
+#footer .footer__box {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 3rem;
 }
-#footer .social-networks {
+#footer .footer__box .social__networks {
   display: flex;
   gap: 3rem;
 }
-#footer .social-networks i {
+#footer .footer__box .social__networks i {
   font-size: 2.5rem;
 }
-#footer .social-networks .facebook {
+#footer .footer__box .social__networks .facebook {
   background-color: rgb(15, 15, 196);
   color: #ffffff;
   padding: 1.5rem;
   border-radius: 30%;
 }
-#footer .social-networks .instagram {
+#footer .footer__box .social__networks .instagram {
   color: #ffffff;
   padding: 1.5rem;
   border-radius: 30%;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
-#footer .social-networks .whatsapp {
+#footer .footer__box .social__networks .whatsapp {
   color: #ffffff;
   padding: 1.5rem;
   border-radius: 30%;
@@ -118,10 +116,9 @@ img {
   align-items: center;
   gap: 1.5rem;
   flex-wrap: wrap;
-  max-width: 1200px;
   padding: 0 1rem;
   margin: 0 auto;
-  margin-top: 5rem;
+  margin-top: 2.5rem;
   border-top: 2px solid #000000;
 }
 #articles .article {
@@ -149,3 +146,5 @@ img {
   cursor: pointer;
   border-radius: 100px;
 }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,9 +1,8 @@
 #articles {
     @include flex (null, center, center, 1.5rem, wrap);
-    max-width: 1200px;
     padding: 0 1rem;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 2.5rem;
     border-top: 2px solid $color-one;
 
     .article {
