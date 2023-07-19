@@ -1,0 +1,14 @@
+// import variables
+
+@import "./utilities/variables";
+@import "./globals/reset";
+@import "./utilities/mixins";
+
+//import layouts
+
+@import "./layouts/navbar";
+@import "./layouts/footer.scss";
+
+// import views
+
+@import "./views/home";

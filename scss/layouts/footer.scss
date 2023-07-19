@@ -1,0 +1,56 @@
+#footer {
+    @include flex(column, null, center, null, null);
+    border-top: 2px solid $color-one;
+    margin-top: 6rem;
+
+    p {
+        font-size: 2rem;
+        background-color: $color-one;
+        color: $color-seven;
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    iframe {
+        width: 350px;
+        height: 300px;
+    }
+
+    .box_footer {
+        @include flex(null, space-around, center, 2rem, wrap);
+        width: 100%;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .social-networks {
+        display: flex;
+        gap: 3rem;
+
+        i {
+            font-size: 2.5rem;
+        }
+
+        .facebook {
+            background-color:rgb(15, 15, 196) ;
+            color: $color-seven;
+            padding: 1.5rem;
+            border-radius: 30%;
+        }
+        
+        .instagram {
+            color: $color-seven;
+            padding: 1.5rem;
+            border-radius: 30%;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        }
+        
+        .whatsapp {
+            color: $color-seven;
+            padding: 1.5rem;
+            border-radius: 30%;
+            background-color: green;
+        }
+    }
+}
