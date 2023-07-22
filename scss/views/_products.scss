@@ -1,10 +1,9 @@
-#articles {
+#products {
     @include flex (null, center, center, 1.5rem, wrap);
     padding: 40px 20px;
     margin: 0 auto;
-    border-top: 2px solid $color-one;
 
-    .article {
+    .product {
         @include flex (column, null, center, 1.5rem, null);
         flex: 1 1 clamp(300px, 30%, 400px);
 
@@ -15,6 +14,12 @@
 
         &__price {
             font-size: 1.5rem;
+            font-weight: bold;
+            font-family: $font-secundary;
+        }
+
+        &__text {
+            font-size: 1rem;
             font-weight: bold;
             font-family: $font-secundary;
         }

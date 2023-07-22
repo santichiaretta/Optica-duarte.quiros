@@ -44,45 +44,41 @@
     <!-- Fin header -->
 
     <!-- Inicio main -->
-    <main class="main-general">
-        <h3>- Contacto -</h3>
-        <img src="../img/optica-seccion-contacto.jpg" alt="Banner-Contacto">
+    <main class="main__pages">
+        <h1 class="main__pages__title">- Contacto -</h1>
     </main>
+
     <!-- Fin main -->
 
-    <hr> <!-- linea divisoria -->
-
     <!-- Inicio seccion -->
-    <section class="section-contacts">
+    <section id="contact">
+        <div class="contact__box">
+            <form class="contact__box__form" action="form.php" method="POST">
+                <label class="contact__box__form__label" for="">Nombre y apellido</label>
+                <input class="contact__box__form__input" type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
 
-        <form action="form.php" method="POST">
-            <label for="">Nombre y apellido</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+                <label class="contact__box__form__label" for="">Teléfono</label>
+                <input class="contact__box__form__input" type="number" name="telefono" id="telefono" placeholder="xxxx-xxxxxxx (sin el 0 y el 15)">
 
-            <label for="">Teléfono</label>
-            <input type="number" name="telefono" id="telefono" placeholder="xxxx-xxxxxxx (sin el 0 y el 15)">
+                <label class="contact__box__form__label" for="">Email</label>
+                <input class="contact__box__form__input" type="email" name="correo" id="correo" placeholder="ejemplo@xxxxx.com">
 
-            <label for="">Email</label>
-            <input type="email" name="correo" id="correo" placeholder="ejemplo@xxxxx.com">
+                <label class="contact__box__form__label" for="">Asunto</label>
+                <input class="contact__box__form__input" type="text" name="motivo" id="motivo" placeholder="Describre el mensaje en pocas palabras">
 
-            <label for="">Asunto</label>
-            <input type="text" name="motivo" id="motivo" placeholder="Describre el mensaje en pocas palabras">
+                <p>Mensaje</p>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
 
-            <p>Mensaje</p>
-            <textarea name="" id="" cols="30" rows="10">
+                <p>¿Acepta los términos y condiciones?</p>
+                <input class="contact__box__form__check" type="checkbox" name="" id="" required>
 
-            </textarea>
+                <input class="contact__box__form__button" type="submit" value="Enviar">
+            </form>
+        </div>
 
-            <p>¿Acepta los términos y condiciones?</p>
-            <input type="checkbox" name="" id="" required>
-
-            <input type="submit" value="Enviar">
-        </form>
 
     </section>
     <!-- Fin seccion -->
-
-    <hr> <!-- linea divisoria -->
 
     <!-- Inicio footer -->
     <footer id="footer">
@@ -117,4 +113,5 @@
     <script src="https://kit.fontawesome.com/8964c3486c.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>

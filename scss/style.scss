@@ -7,8 +7,13 @@
 //import layouts
 
 @import "./layouts/navbar";
-@import "./layouts/footer.scss";
+@import "./layouts/footer";
+@import "./layouts/mainpages";
 
 // import views
 
 @import "./views/home";
+@import "./views/products";
+@import "./views/socialworks";
+@import "./views/contact";
+@import "./views/aboutus";

@@ -1,0 +1,50 @@
+#contact {
+    .contact__box {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        &__form {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            & p {
+                font-size: 1rem;
+                font-family: $font-primary;
+            }
+
+            & textarea {
+                width: 90%;
+                height: 200px;
+            }
+
+            &__input {
+                width: 90%;
+                height: 30px;
+                margin: 0.5rem;
+            }
+
+            &__label {
+                font-size: 1.2rem;
+                font-family: $font-primary;
+            }
+
+            &__check {
+                width: 30%;
+                height: 30px;
+                margin: 0.5rem;
+            }
+
+            &__button {
+                padding: 0.5em 1em;
+                border: none;
+                background: rgb(100, 200, 255);
+                cursor: pointer;
+            }
+        }
+    }
+}

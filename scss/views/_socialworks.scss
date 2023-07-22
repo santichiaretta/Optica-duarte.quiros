@@ -1,0 +1,35 @@
+#social-works {
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .social__works {
+        display: grid;
+        padding: 0 15px;
+
+        &__first {
+            background-color: $color-two;
+            color: $color-seven;
+            font-family: $font-primary;
+            font-size: 2rem;
+            padding: 10px 15px;
+        }
+    
+        &__white {
+            padding: 15px;
+            margin: 0;
+            font-family: $font-secundary;
+            font-size: 1.5rem;
+        }
+    
+        &__gray {
+            background-color: $color-four;
+            color: $color-one;
+            padding: 15px;
+            margin: 0;
+            font-family: $font-secundary;
+            font-size: 1.5rem;
+        }
+    }
+}
+

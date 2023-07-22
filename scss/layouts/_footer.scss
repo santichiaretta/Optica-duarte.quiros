@@ -1,10 +1,9 @@
 #footer {
     @include flex(column, null, space-around, null, null);
     border-top: 2px solid $color-one;
-    margin-top: 3rem;
 
     p { 
-        font-size: 2rem;
+        font-size: 1.5rem;
         background-color: $color-one;
         color: $color-seven;
         width: 100%;
@@ -19,8 +18,9 @@
 
     .footer__box {
         @include flex(row, space-evenly, center, null, null);
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+        background-color: $color-four;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         
         .social__networks {
             display: flex;
