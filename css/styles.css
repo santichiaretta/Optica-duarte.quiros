@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .logo {
+  transition: all 0.2s ease;
+}
+.header .logo:hover {
+  transform: scale(1.1);
+}
+.header .logo img {
+  width: auto;
+  height: 70px;
+  border-radius: 1.8rem;
+}
+.header .nav-links li {
+  padding: 1rem 2.5rem 0 2.5rem;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+.header .nav-links li:hover {
+  transform: scale(1.1);
+}
+.header .nav-links a {
+  padding-bottom: 0.1rem;
+  font-family: "Roboto", "sans-serif";
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #000000;
+  transition: all 0.2s ease;
+}
+.header .nav-links a:hover {
+  color: #777777;
+}
+
+.img-background {
+  height: 7rem;
+  background-image: url(../img/main-background.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-background h1 {
+  font-family: "Anton", "sans-serif";
+  font-size: 3rem;
+  color: #777777;
+}
+
+.grid-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+.grid-container .grid-item {
+  padding-bottom: 1rem;
+  display: grid;
+  justify-items: center;
+}
+.grid-container .grid-item__img {
+  border-radius: 1rem;
+}
+.grid-container .grid-item__name {
+  padding-top: 1rem;
+  font-family: "Roboto", "sans-serif";
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: #000000;
+}
+.grid-container .grid-item__price {
+  padding-bottom: 0.5rem;
+  font-family: "Roboto", "sans-serif";
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000000;
+}
+.grid-container .grid-item__button {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  font-family: "Roboto", "sans-serif";
+  font-size: 1rem;
+  font-weight: 500;
+  color: #777777;
+  background-color: transparent;
+  border: 2px solid #777777;
+  border-radius: 1.5rem;
+  transition: all 0.2s ease;
+}
+.grid-container .grid-item__button:hover {
+  color: #ffffff;
+  background-color: #777777;
+  border: 2px solid #000000;
+}
+
+.footer {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr;
+  background-color: #000000;
+}
+.footer__box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer__box__title {
+  font-family: "Anton", "sans-serif";
+  font-size: 1.2rem;
+  color: #777777;
+  border-bottom: 1px solid #777777;
+}
+.footer__box__img {
+  margin-top: auto;
+  padding: 0.5rem;
+  width: 200px;
+  height: 120px;
+}
+.footer__box__text {
+  margin: auto;
+  padding: 1rem 3rem;
+  font-family: "Roboto", "sans-serif";
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: center;
+}
+.footer__box__site-map {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.footer__box__site-map a {
+  font-family: "Roboto", "sans-serif";
+  color: #ffffff;
+}
+.footer__box__site-map a:hover {
+  color: #777777;
+}
+.footer__box .maps {
+  margin: auto;
+  display: flex;
+}
+.footer__box .social-icons {
+  display: flex;
+  gap: 3rem;
+}
+.footer__box .social-icons__item i {
+  font-size: 1.5rem;
+}
+.footer__box .social-icons__item__facebook {
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 33%;
+  background-color: rgb(15, 15, 196);
+}
+.footer__box .social-icons__item__instagram {
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 33%;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.footer__box .social-icons__item__whatsapp {
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 33%;
+  background-color: green;
+}
+
+.index-main .index-main-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.index-main .index-main-container img {
+  width: 100%;
+  height: 550px;
+}
+.index-main .index-main-container .index-main-text1 {
+  position: absolute;
+  color: #ffffff;
+  font-family: "Anton", "sans-serif";
+  font-size: 2rem;
+  left: 11px;
+  bottom: 80px;
+}
+.index-main .index-main-container .index-main-text2 {
+  position: absolute;
+  color: #ffffff;
+  font-family: "Anton", "sans-serif";
+  font-size: 2rem;
+  left: 11px;
+  bottom: 45px;
+}
+.index-main .index-main-container .index-main-title {
+  position: absolute;
+  font-family: "Anton", "sans-serif";
+  left: 10px;
+  bottom: 10px;
+}
+
+.promotions-title {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.promotions-title h2 {
+  font-family: "Anton", "sans-serif";
+  font-size: 1.6rem;
+  color: #000000;
+}
+
+.promotion-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 2rem;
+}
+.promotion-container .promotion-item {
+  padding-bottom: 1rem;
+  display: grid;
+  justify-items: center;
+}
+.promotion-container .promotion-item__img {
+  border-radius: 1rem;
+}
+.promotion-container .promotion-item__name {
+  padding-top: 1rem;
+  font-family: "Roboto", "sans-serif";
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: #000000;
+}
+.promotion-container .promotion-item__old-price {
+  font-family: "Roboto", "sans-serif";
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777777;
+  text-decoration: line-through;
+}
+.promotion-container .promotion-item__price {
+  padding-bottom: 0.5rem;
+  font-family: "Roboto", "sans-serif";
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000000;
+}
+.promotion-container .promotion-item__button {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  font-family: "Roboto", "sans-serif";
+  font-size: 1rem;
+  font-weight: 500;
+  color: #777777;
+  background-color: transparent;
+  border: 2px solid #777777;
+  border-radius: 1.5rem;
+  transition: all 0.2s ease;
+}
+.promotion-container .promotion-item__button:hover {
+  color: #ffffff;
+  background-color: #777777;
+  border: 2px solid #000000;
+}
+
+.container-form {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  margin-top: 5rem;
+  font-family: "Roboto", "sans-serif";
+}
+.container-form h2 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+.container-form a {
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.container-form a i {
+  color: #777777;
+  margin-right: 1rem;
+}
+.container-form form {
+  margin-bottom: 3rem;
+}
+.container-form form .campo {
+  width: 100%;
+  padding: 1rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #777777;
+  margin-bottom: 1.5rem;
+  border-radius: 3px;
+  outline: 0px;
+}
+.container-form form textarea {
+  width: 100%;
+  padding: 1rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #777777;
+  margin-bottom: 1.5rem;
+  border-radius: 3px;
+  outline: 0px;
+  max-width: 530px;
+  min-width: 530px;
+  min-height: 140px;
+  max-height: 150px;
+}
+.container-form form .submit-btn {
+  padding: 0.5rem;
+  outline: 0px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #777777;
+  background-color: transparent;
+  border: 2px solid #777777;
+  border-radius: 1.5rem;
+  transition: all 0.2s ease;
+}
+.container-form form .submit-btn:hover {
+  color: #ffffff;
+  background-color: #777777;
+  border: 2px solid #000000;
+}
+
+/*# sourceMappingURL=styles.css.map */

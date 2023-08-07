@@ -1,0 +1,53 @@
+.grid-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+
+    .grid-item {
+        padding-bottom: 1rem;
+        display: grid;
+        justify-items: center;
+
+        &__img {
+            border-radius: 1rem;
+        }
+
+        &__name {
+            padding-top: 1rem;
+            font-family: $font-secundary;
+            font-size: 1.1rem;
+            font-weight: bolder;
+            color: $color-one;
+        }
+
+        &__price {
+            padding-bottom: 0.5rem;
+            font-family: $font-secundary;
+            font-size: 1rem;
+            font-weight: 500;
+            color: $color-one;
+        }
+
+        &__button {
+            display: inline-block;
+            padding: 0.3rem 0.7rem;
+            font-family: $font-secundary;
+            font-size: 1rem;
+            font-weight: 500;
+            color: $color-two;
+            background-color: transparent;
+            border: 2px solid $color-two;
+            border-radius: 1.5rem;
+            transition: all 0.2s ease;
+            &:hover {
+                color: $color-three;
+                background-color: $color-two;
+                border: 2px solid $color-one;
+            }
+        }
+    }
+}

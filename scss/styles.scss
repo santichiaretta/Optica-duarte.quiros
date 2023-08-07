@@ -1,0 +1,17 @@
+// import variables y global
+
+@import "./utilities/variables";
+@import "./globals/reset";
+
+
+// import layouts
+
+@import "./layouts/navbar";
+@import "./layouts/main";
+@import "./layouts/section";
+@import "./layouts/footer";
+
+// import views
+
+@import "./views/home";
+@import "./views/contact";

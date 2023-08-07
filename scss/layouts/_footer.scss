@@ -1,54 +1,94 @@
-#footer {
-    @include flex(column, null, space-around, null, null);
-    border-top: 2px solid $color-one;
+.footer {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    background-color: $color-one;
 
-    p { 
-        font-size: 1.5rem;
-        background-color: $color-one;
-        color: $color-seven;
-        width: 100%;
-        text-align: center;
-        padding: 2rem;
-    }
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-    iframe {
-        width: 350px;
-        height: 300px;
-    }
+        &__title {
+            font-family: $font-primary;
+            font-size: 1.2rem;
+            color: $color-two;
+            border-bottom: 1px solid $color-two;
+        }
 
-    .footer__box {
-        @include flex(row, space-evenly, center, null, null);
-        background-color: $color-four;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        
-        .social__networks {
+        &__img {
+            margin-top: auto;
+            padding: 0.5rem;
+            width: 200px;
+            height: 120px;
+        }
+
+        &__text {
+            margin: auto;
+            padding: 1rem 3rem;
+            font-family: $font-secundary;
+            font-size: 1rem;
+            color: $color-three;
+            text-align: center;
+        }
+
+        &__site-map {
+            margin: auto;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            a {
+                font-family: $font-secundary;
+                color: $color-three;
+
+                &:hover {
+                    color: $color-two;
+                }
+            }
+        }
+
+        .maps {
+            margin: auto;
+            display: flex;
+        }
+
+        .social-icons {
             display: flex;
             gap: 3rem;
-    
-            i {
-                font-size: 2.5rem;
-            }
-    
-            .facebook {
-                background-color:rgb(15, 15, 196) ;
-                color: $color-seven;
-                padding: 1.5rem;
-                border-radius: 30%;
-            }
-            
-            .instagram {
-                color: $color-seven;
-                padding: 1.5rem;
-                border-radius: 30%;
-                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-            }
-            
-            .whatsapp {
-                color: $color-seven;
-                padding: 1.5rem;
-                border-radius: 30%;
-                background-color: green;
+
+            &__item {
+
+                i {
+                    font-size: 1.5rem;
+                }
+
+                &__facebook {
+                    color: $color-three;
+                    padding: 10px;
+                    border-radius: 33%;
+                    background-color: rgb(15, 15, 196);
+                }
+
+                &__instagram {
+                    color: $color-three;
+                    padding: 10px;
+                    border-radius: 33%;
+                    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                }
+
+                &__whatsapp {
+                    color: $color-three;
+                    padding: 10px;
+                    border-radius: 33%;
+                    background-color: green;
+                }
             }
         }
     }

@@ -1,0 +1,16 @@
+.img-background {
+    height: 7rem;
+    background-image: url(../img/main-background.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-family: $font-primary;
+        font-size: 3rem;
+        color: $color-two;
+    }
+}

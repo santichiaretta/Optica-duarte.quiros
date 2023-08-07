@@ -1,32 +1,37 @@
-#header {
-    @include flex (null, center, center, 30rem, wrap);
-    width: 100%;
-    height: 70px;
-    background-color: $color-one;
-    border-bottom: 1px solid #cddde0;
-
+.header {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .logo {
-        width: 18%;
-        height: 100%;
-        display: flex;
+        transition: all 0.2s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+        img {
+            width: auto;
+            height: 70px;
+            border-radius: 1.8rem;
+        }
     }
-
-    .menu__list {
-        @include flex (null, center, null, 10rem, wrap);
-
-        &__item {
-            font-size: 1.6rem;
-            font-family: $font-secundary;
-            font-weight: bold;
-            border-bottom: 2px solid $color-one ;
-            transition: all 0.5s ease;
-
+    .nav-links {
+        li {
+            padding: 1rem 2.5rem 0 2.5rem;
+            display: inline-block;
+            transition: all 0.2s ease;
             &:hover {
-                border-color: $color-six;
+                transform: scale(1.1);
             }
-
-            &__link {
-                color: $color-seven;
+        }
+        a{
+            padding-bottom: 0.1rem;
+            font-family: $font-secundary;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: $color-one;
+            transition: all 0.2s ease;
+            &:hover {
+                color: $color-two;
             }
         }
     }

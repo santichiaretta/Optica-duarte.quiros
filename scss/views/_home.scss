@@ -1,32 +1,111 @@
-#articles {
-    @include flex (null, center, center, 1.5rem, wrap);
-    padding: 40px 20px;
-    margin: 0 auto;
-    border-top: 2px solid $color-one;
+.index-main {
+    .index-main-container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
 
-    .article {
-        @include flex (column, null, center, 1.5rem, null);
-        flex: 1 1 clamp(300px, 30%, 400px);
+        img {
+            width: 100%;
+            height: 550px;
+        }
 
-        &__title {
-            font-size: 2rem;
+        .index-main-text1 {
+            position: absolute;
+            color: $color-three;
             font-family: $font-primary;
+            font-size: 2rem;
+            left: 11px;
+            bottom: 80px;
+        }
+
+        .index-main-text2 {
+            position: absolute;
+            color: $color-three;
+            font-family: $font-primary;
+            font-size: 2rem;
+            left: 11px;
+            bottom: 45px;
+        }
+
+        .index-main-title {
+            position: absolute;
+            font-family: $font-primary;
+            left: 10px;
+            bottom: 10px;
+        }
+    }
+}
+
+.promotions-title {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        font-family: $font-primary;
+        font-size: 1.6rem;
+        color: $color-one;
+    }
+}
+
+.promotion-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+
+    .promotion-item {
+        padding-bottom: 1rem;
+        display: grid;
+        justify-items: center;
+
+        &__img {
+            border-radius: 1rem;
+        }
+
+        &__name {
+            padding-top: 1rem;
+            font-family: $font-secundary;
+            font-size: 1.1rem;
+            font-weight: bolder;
+            color: $color-one;
+        }
+
+        &__old-price {
+            font-family: $font-secundary;
+            font-size: 1rem;
+            font-weight: 400;
+            color: $color-two;
+            text-decoration: line-through;
         }
 
         &__price {
-            font-size: 1.5rem;
-            font-weight: bold;
+            padding-bottom: 0.5rem;
             font-family: $font-secundary;
+            font-size: 1rem;
+            font-weight: 500;
+            color: $color-one;
         }
 
-        &__link {
-            border: none;
-            background-color: $color-one;
-            color: $color-seven;
-            padding: 1rem 2rem;
-            font-weight: bold;
-            font-size: 1.2rem;
-            border-radius: 100px;
+        &__button {
+            display: inline-block;
+            padding: 0.3rem 0.7rem;
+            font-family: $font-secundary;
+            font-size: 1rem;
+            font-weight: 500;
+            color: $color-two;
+            background-color: transparent;
+            border: 2px solid $color-two;
+            border-radius: 1.5rem;
+            transition: all 0.2s ease;
+            &:hover {
+                color: $color-three;
+                background-color: $color-two;
+                border: 2px solid $color-one;
+            }
         }
     }
 }
