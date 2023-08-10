@@ -1,5 +1,5 @@
 .grid-container {
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -50,4 +50,8 @@
             }
         }
     }
+}
+
+.second-grid {
+    padding-top: 0;
 }

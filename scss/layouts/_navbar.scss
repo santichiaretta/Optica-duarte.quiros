@@ -1,37 +1,95 @@
-.header {
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .logo {
-        transition: all 0.2s ease;
-        &:hover {
-            transform: scale(1.1);
-        }
-        img {
-            width: auto;
-            height: 70px;
-            border-radius: 1.8rem;
-        }
+header {
+    font-family: $font-secundary;
+    width: 100%;
+    padding: 1rem;
+
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    .nav-links {
+
+    .logo {
+        max-width: 10rem;
+        border-radius: 1.6rem;
+    }
+
+    .bar-btn {
+        font-size: 1.5rem;
+        color: $color-one;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+        height: 0vh;
+        top: 6rem;
+        background: rgba(0, 0, 0, .95);
+        text-align: center;
+        transition: all .5s;
+
         li {
-            padding: 1rem 2.5rem 0 2.5rem;
-            display: inline-block;
-            transition: all 0.2s ease;
-            &:hover {
-                transform: scale(1.1);
+            display: none;
+            line-height: 2rem;
+            margin: 3rem 0;
+            transition: all .5s;
+
+            a {
+                color: $color-three;
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-weight: 600;
+
+                &:hover {
+                    color: $color-two;
+                    transition: .3s;
+                }
             }
         }
-        a{
-            padding-bottom: 0.1rem;
-            font-family: $font-secundary;
-            font-size: 0.9rem;
-            font-weight: bold;
-            color: $color-one;
-            transition: all 0.2s ease;
-            &:hover {
-                color: $color-two;
+
+        .active {
+            color: $color-two;
+        }
+    }
+
+    #check {
+        display: none;
+
+        &:checked~.nav-menu {
+            height: 100vh;
+
+            li {
+                display: block;
+            }
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        .bar-btn {
+            display: none;
+        }
+
+        .nav-menu {
+            position: relative;
+            top: 0;
+            background: none;
+            transition: none;
+            text-align: right;
+
+            li {
+                display: inline-block;
+                line-height: 1rem;
+                margin: 0 1rem;
+                transition: 0;
+
+                a{
+                    color: $color-one;
+                    font-size: 1rem;
+                    text-transform: none;
+                }
             }
         }
     }
